@@ -1,30 +1,39 @@
+
+
 let numSquares = 6;
 let colors = [];
-let pickedColor;
+let pickedColor = pickColor();
 let squares = document.querySelectorAll('.square');
 let colorDisplay = document.getElementById('colorDisplay');
 let messageDisplay = document.querySelector('#message');
 let h1 = document.querySelector('h1');
-colorDisplay.textContent = pickedColor;
 let resetButton = document.querySelector('#reset');
 let modeButtons = document.querySelectorAll('.mode');
+
 
 
 
 init();
 //mode buttons event listeners
 function init() {
+    setUpModeButtons();
+    setUpSquares();
+    reset();
+}
+
+function setUpModeButtons() {
     for (let i = 0; i < modeButtons.length; i++) {
         modeButtons[i].addEventListener('click', function() {
             modeButtons[0].classList.remove('selected');
             modeButtons[1].classList.remove('selected');
             this.classList.add('selected');
-    
             this.textContent === "Easy" ? numSquares = 3: numSquares = 6;
             reset();
         });
     }
+}
 
+function setUpSquares () {
     for (let i = 0; i < squares.length; i++) {
         //add click listeners to squares
         squares[i].addEventListener('click', function() {
@@ -44,7 +53,6 @@ function init() {
             }
         });
     }
-    reset();
 }
 
 function reset() {
