@@ -1,4 +1,4 @@
-# <p style="text-align: center;">Color Game
+# Color Game
 
 ![Color Game](colorgamecropped.png)
 
