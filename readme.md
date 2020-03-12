@@ -1,5 +1,7 @@
 # Color Game
 
+![Color Game](color.jpg)
+
 Hello!
 
 Test your knowledge of RGB color codes. Look at the number above, and guess which square matches the RGB code.
