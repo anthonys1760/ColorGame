@@ -1,6 +1,6 @@
 # Color Game
 
-![Color Game](color.jpg)
+![Color Game](colorgamecropped.png)
 
 Hello!
 
